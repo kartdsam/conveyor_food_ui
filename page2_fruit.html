@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style type="text/css">
+        .controlgroup-textinput {
+            padding-top: .22em;
+            padding-bottom: .22em;
+        }
+    </style>
+    <script>
+        $(document).on("pageinit", "#pageone", function() {
+            $(".b1").on("tap", function() {
+                var result1 = $("#name2").val();
+                $("#name2").val(result1 + "1");
+            });
+        });
+        $(document).on("pageinit", "#pageone", function() {
+            $(".b2").on("tap", function() {
+                var result2 = $("#name2").val();
+                $("#name2").val(result2 + "2");
+            });
+        });
+        $(document).on("pageinit", "#pageone", function() {
+            $(".b3").on("tap", function() {
+                var result3 = $("#name2").val();
+                $("#name2").val(result3 + "3");
+            });
+        });
+        $(document).on("pageinit", "#pageone", function() {
+            $(".b0").on("tap", function() {
+                var result0 = $("#name2").val();
+                $("#name2").val(result0 + "0");
+            });
+        });
+        $(document).on("pageinit", "#pageone", function() {
+            $(".b4").on("tap", function() {
+                var result4 = $("#name2").val();
+                $("#name2").val(result4 + "4");
+            });
+        });
+        $(document).on("pageinit", "#pageone", function() {
+            $(".b5").on("tap", function() {
+                var result5 = $("#name2").val();
+                $("#name2").val(result5 + "5");
+            });
+        });
+        $(document).on("pageinit", "#pageone", function() {
+            $(".b6").on("tap", function() {
+                var result6 = $("#name2").val();
+                $("#name2").val(result6 + "6");
+            });
+        });
+        $(document).on("pageinit", "#pageone", function() {
+            $(".b7").on("tap", function() {
+                var result7 = $("#name2").val();
+                $("#name2").val(result7 + "7");
+            });
+        });
+        $(document).on("pageinit", "#pageone", function() {
+            $(".b8").on("tap", function() {
+                var result8 = $("#name2").val();
+                $("#name2").val(result8 + "8");
+            });
+        });
+        $(document).on("pageinit", "#pageone", function() {
+            $(".b9").on("tap", function() {
+                var result9 = $("#name2").val();
+                $("#name2").val(result9 + "9");
+            });
+        });
+        $(document).on("pageinit", "#pageone", function() {
+            $(".bb").on("tap", function() {
+                var resultb = $("#name2").val();
+                var n = resultb.length;
+                $("#name2").val(resultb.substring(0, n - 1));
+            });
+        });
+        $(document).on("pageinit", "#pageone", function() {
+            $(".fruit1").on("tap", function() {
+                $(".bo").on("tap", function() {
+                    var txt = $("#name2").val();
+                    $(".1fruit").append(txt);
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <div data-role="page" id="pageone">
+        <div data-role="header">
+            <h1> 敘 · 食 </h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="page2_vegetable.html">蔬菜</a></li>
+                    <li><a href="page2_fruit.html">水果</a></li>
+                    <li><a href="page2_bakery.html">烘焙食品</a></li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-split-icon="gear" data-split-theme="a" data-inset="true">
+
+                <li><a class="1fruit" href="#">
+                    <img src="1.jpg">
+                <h2>空心菜</h2>
+                <p>剩餘5個</p></a>
+                    <a class="fruit1" href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop"></a>
+                </li>
+
+                <li><a href="#">
+                    <img src="2.jpg">
+                <h2>高麗菜</h2>
+                <p>剩餘10個</p></a>
+                    <a class="fruit2" href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop"></a>
+                </li>
+
+                <li><a href="#">
+                    <img src="../_assets/img/album-p.jpg">
+                <h2>地瓜葉</h2>
+                <p>剩餘2個</p></a>
+                    <a class="fruit3" href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop"></a>
+                </li>
+            </ul>
+
+            <div data-role="popup" id="purchase" data-theme="a" data-overlay-theme="b" class="ui-content" style="max-width:400px; padding-bottom:2em;">
+
+                <h3>選購數量</h3>
+                <p>你可以選購想要的數量或是按返回跳出此畫面</p>
+                <li class="ui-field-contain">
+
+                    <!-- <label for="name2">Text Input:</label> -->
+                    <input type="text" name="name2" id="name2" value="" data-clear-btn="true">
+                </li>
+                <div class="ui-grid-c">
+                    <div class="ui-block-a"><a class="b1" href="#" data-role="button">1</a><br>
+                    </div>
+                    <div class="ui-block-b">
+                        <a class="b2" href="#" data-role="button">2</a><br>
+                    </div>
+                    <div class="ui-block-c">
+                        <a class="b3" href="#" data-role="button">3</a><br>
+                    </div>
+                    <div class="ui-block-d">
+                        <a class="b0" href="#" data-role="button">0</a><br>
+                    </div>
+                </div>
+                <div class="ui-grid-c">
+                    <div class="ui-block-a"><a class="b4" href="#" data-role="button">4</a><br>
+                    </div>
+                    <div class="ui-block-b">
+                        <a class="b5" href="#" data-role="button">5</a><br>
+                    </div>
+                    <div class="ui-block-c">
+                        <a class="b6" href="#" data-role="button">6</a><br>
+                    </div>
+                    <div class="ui-block-d">
+                        <a class="bb" href="#" data-role="button">←</a><br>
+                    </div>
+                </div>
+                <div class="ui-grid-c">
+                    <div class="ui-block-a"><a class="b7" href="#" data-role="button">7</a><br>
+                    </div>
+                    <div class="ui-block-b">
+                        <a class="b8" href="#" data-role="button">8</a><br>
+                    </div>
+                    <div class="ui-block-c">
+                        <a class="b9" href="#" data-role="button">9</a><br>
+                    </div>
+                    <div class="ui-block-d">
+                        <a class="bo" href="jj.html" data-role="button">OK</a><br>
+                    </div>
+                </div>
+
+                <!-- <a href="index.html" data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-btn-b ui-icon-check ui-btn-icon-left ui-btn-inline ui-mini">確定</a>
+                <a href="index.html" data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-mini">取消</a> -->
+            </div>
+            <div data-role="controlgroup" data-type="horizontal">
+
+                <!-- <select>
+                <option>$</option>
+                <option>€</option>
+                <option>£</option>
+                <option>¥</option>
+                <option>₩</option>
+                <option>₹</option>
+             </select> -->
+
+                <!-- <input id="currency-controlgroup" type="text" data-wrapper-class="controlgroup-textinput ui-btn">
+                <select>份數
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+             </select>
+
+            </div> -->
+                <!-- <div class="ui-grid-c">
+                <div class="ui-block-a"><a href="#" data-role="button">1</a><br>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#" data-role="button">2</a><br>
+                </div>
+                <div class="ui-block-c">
+                    <a href="#" data-role="button">3</a><br>
+                </div>
+                <div class="ui-block-d">
+                    <a href="#" data-role="button">0</a><br>
+                </div>
+            </div>
+            <div class="ui-grid-c">
+                <div class="ui-block-a"><a href="#" data-role="button">4</a><br>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#" data-role="button">5</a><br>
+                </div>
+                <div class="ui-block-c">
+                    <a href="#" data-role="button">6</a><br>
+                </div>
+                <div class="ui-block-d">
+                    <a href="#" data-role="button">←</a><br>
+                </div>
+            </div>
+            <div class="ui-grid-c">
+                <div class="ui-block-a"><a href="#" data-role="button">7</a><br>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#" data-role="button">8</a><br>
+                </div>
+                <div class="ui-block-c">
+                    <a href="#" data-role="button">9</a><br>
+                </div>
+                <div class="ui-block-d">
+                    <a href="#" data-role="button">OK</a><br>
+                </div>
+            </div> -->
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
